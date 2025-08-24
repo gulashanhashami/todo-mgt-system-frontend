@@ -4,10 +4,11 @@ import { Label } from "../elements/Label";
 import { useAuth } from "../../context/AuthContext";
 import { Loader2 } from 'lucide-react';
 
+//code for login
 export const Login =()=>{
     const [form, setForm] = useState({ email: '', password: '' });
     const [error, setError] = useState('');
-    const [loading, setLoading] = useState(false); // 👈 Loading state
+    const [loading, setLoading] = useState(false);
     const { login, user } = useAuth();
     const navigate = useNavigate();
   

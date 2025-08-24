@@ -1,4 +1,4 @@
-
+//api configurations
 export async function loginUser(credentials) {
     const res = await fetch(`http://localhost:9000/auth/login`, {
       method: 'POST',
@@ -21,5 +21,4 @@ export async function loginUser(credentials) {
   }
   export function logoutUser() {
     // localStorage.removeItem('token');
-    // localStorage.removeItem('user');
   }

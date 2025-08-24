@@ -7,6 +7,7 @@ import { Eye, EyeOff } from "lucide-react";
 import { Link } from "react-router-dom";
 import { createUser } from "../../service/auths";
 
+//code for sign-up
 export const Register =()=>{
     const [form, setForm] = useState({
         name: "",
