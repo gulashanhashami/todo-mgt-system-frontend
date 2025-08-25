@@ -1,10 +1,13 @@
 import React from "react";
+import { TodoList } from "../todo/TodoList";
+import { useAuth } from "../../context/AuthContext";
 
 export const Dashboard=()=>{
+    const { user } = useAuth();
 
     return(
         <div>
-            <h2>Here you can add/delete your task</h2>
+            <TodoList token={user.token} />
         </div>
     )
 }

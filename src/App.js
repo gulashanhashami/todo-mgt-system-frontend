@@ -7,6 +7,7 @@ import { Navbar } from './components/navbar/Navbar';
 import { AuthProvider } from './context/AuthContext';
 import ProtectedRoute from './routes/ProtectedRoute';
 import { Dashboard } from './components/dashboard/Dashboard';
+import { UserList } from './components/users/UserList';
 
 function App() {
   return (
@@ -22,6 +23,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Dashboard />
+                  </ProtectedRoute>
+                }
+              />
+              <Route
+                path="/users"
+                element={
+                  <ProtectedRoute>
+                    <UserList />
                   </ProtectedRoute>
                 }
               />

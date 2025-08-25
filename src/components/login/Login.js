@@ -31,12 +31,7 @@ export const Login =()=>{
       try {
         setLoading(true);
         const loggedInUser = await login(form);
-  
-        if (loggedInUser?.role === 'admin') {
-          navigate('/admin-dashboard');
-        } else {
           navigate('/');
-        }
       } catch (err) {
         setError(err.message || 'Login failed');
       } finally {

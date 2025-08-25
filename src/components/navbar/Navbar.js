@@ -9,17 +9,16 @@ export const Navbar = () => {
         logout();
         navigate("/login");
     };
-
-    const dashboardPath = user?.user.role === "admin" ? "/admin-dashboard" : "/";
+    console.log("user", user);
 
     return (
         <nav className="bg-slate-800 text-white p-4 flex justify-between items-center">
             <div className="flex gap-6 items-center">
-                <Link to={"dashboardPath"} className="font-semibold text-lg">
+                <Link to={"/"} className="font-semibold text-lg">
                     Dashboard
                 </Link>
 
-                {user?.user.role === ("admin" || "manager") && (
+                {(user?.user.role === "admin" || user?.user.role === "manager") && (
                     <>
                         <Link to="/users">Users</Link>
                     </>
