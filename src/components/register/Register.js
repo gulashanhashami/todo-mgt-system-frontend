@@ -57,8 +57,8 @@ export const Register =()=>{
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
-      <Card className="w-full max-w-md shadow-md rounded-xl border border-gray-200">
+    <div className="min-h-screen flex items-center justify-center bg-blue-50 px-4">
+      <Card className="w-full max-w-md shadow-md rounded-xl border border-grey-50 bg-white">
         <CardContent className="p-6">
           <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
             Create Account

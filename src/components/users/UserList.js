@@ -53,6 +53,7 @@ export const UserList =()=> {
       .then((res) => {
         setUsers([...users, res.data]);
         setShowAddModal(false);
+        userList();
         setFormData({ name: "", email: "", password: "", role: "user" });
       })
       .catch((err) => alert(err.response?.data?.message));
@@ -99,7 +100,7 @@ export const UserList =()=> {
   return (
     <div className="p-6">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold">User Management</h2>
+        <h2 className="text-xl font-bold">Employee Management</h2>
         {(user?.user.role === "admin" || user?.user.role === "manager") && (
           <button
             className="bg-blue-600 text-white px-4 py-2 rounded-md"
@@ -177,6 +178,7 @@ export const UserList =()=> {
       {showEditModal && (
        <EditUser 
        formData={formData}
+       setFormData={setFormData}
        handleChange={handleChange}
        setShowEditModal={setShowEditModal}
        handleUpdateUser={handleUpdateUser}

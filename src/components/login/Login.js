@@ -40,8 +40,8 @@ export const Login =()=>{
     };
   
     return (
-      <div className="max-w-md mx-auto mt-20">
-        <form onSubmit={handleSubmit} className="space-y-5 pr-6 pl-6 pt-10 pb-20 bg-white rounded shadow">
+      <div className="min-h-screen flex items-center justify-center bg-blue-50 border-blue-500">
+        <form onSubmit={handleSubmit} className="space-y-5 pr-6 pl-6 pt-10 pb-20 bg-white rounded-xl shadow w-full max-w-md">
           <h2 className="text-xl font-bold">Welcome Back</h2>
           <p className="text-sl mb-10">Sign in to your account to continue</p>
   

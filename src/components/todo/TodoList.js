@@ -54,7 +54,7 @@ export const TodoList=({ token })=> {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-8 border-blue-600">
+    <div className="max-w-6xl mx-auto bg-white shadow-lg rounded-2xl p-6 mt-8">
       <h2 className="text-xl font-semibold mb-4">My Tasks</h2>
       <p className="text-sl mb-10">Manage your personel to-do list</p>
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const EditUser = ({formData, handleChange, setShowEditModal, handleUpdateUser})=>{
+export const EditUser = ({formData, handleChange, setShowEditModal, handleUpdateUser, setFormData})=>{
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center">
@@ -43,7 +43,10 @@ export const EditUser = ({formData, handleChange, setShowEditModal, handleUpdate
           <div className="flex justify-end gap-2">
             <button
               className="px-4 py-2 border rounded-md"
-              onClick={() => setShowEditModal(false)}
+              onClick={() => {
+                setShowEditModal(false);
+                setFormData({ name: "", email: "", password: "", role: "user" });
+              }}
             >
               Cancel
             </button>

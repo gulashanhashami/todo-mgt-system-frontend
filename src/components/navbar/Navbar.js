@@ -20,7 +20,7 @@ export const Navbar = () => {
 
                 {(user?.user.role === "admin" || user?.user.role === "manager") && (
                     <>
-                        <Link to="/users">Users</Link>
+                        <Link to="/employees">Employees</Link>
                     </>
                 )}
             </div>
